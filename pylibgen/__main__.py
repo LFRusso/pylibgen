@@ -63,7 +63,7 @@ def get_download_url(doc_data):
 def pretty_print(results, jp2a=True):
     for i,result in enumerate(results):
         out_str = f"""
-      {"[{:02d}]".format(i+1)}. {bcolors.HEADER}Tite:{bcolors.ENDC} {result['Title']}
+      {"[{:02d}]".format(i+1)}. {bcolors.HEADER}Title:{bcolors.ENDC} {result['Title']}
             {bcolors.HEADER}Author:{bcolors.ENDC} {result['Author']}
             {bcolors.HEADER}Publisher:{bcolors.ENDC} {result['Publisher']}
             {bcolors.HEADER}Year:{bcolors.ENDC} {result['Year']}
