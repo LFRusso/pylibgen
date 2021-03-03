@@ -63,13 +63,14 @@ def get_download_url(doc_data):
 def pretty_print(results, jp2a=True):
     for i,result in enumerate(results):
         out_str = f"""
-      {[i+1]}. {bcolors.HEADER}Tite:{bcolors.ENDC} {result['Title']}
-           {bcolors.HEADER}Author:{bcolors.ENDC} {result['Author']}
-           {bcolors.HEADER}Publisher:{bcolors.ENDC} {result['Publisher']}
-           {bcolors.HEADER}Year:{bcolors.ENDC} {result['Year']}
-           {bcolors.HEADER}Extension:{bcolors.ENDC} {result['Extension']}
+      {"[{:02d}]".format(i+1)}. {bcolors.HEADER}Tite:{bcolors.ENDC} {result['Title']}
+            {bcolors.HEADER}Author:{bcolors.ENDC} {result['Author']}
+            {bcolors.HEADER}Publisher:{bcolors.ENDC} {result['Publisher']}
+            {bcolors.HEADER}Year:{bcolors.ENDC} {result['Year']}
+            {bcolors.HEADER}Extension:{bcolors.ENDC} {result['Extension']}
+            {bcolors.HEADER}Size:{bcolors.ENDC} {result['Size']}
+            {bcolors.HEADER}Language:{bcolors.ENDC} {result['Language']}
         --
-
         """
         print(out_str)
     num_str = ' '.join([f"[{i+1}]" for i in range(len(results))])
