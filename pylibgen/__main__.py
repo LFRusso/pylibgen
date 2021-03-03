@@ -73,7 +73,7 @@ def pretty_print(results, jp2a=True):
         """
         print(out_str)
     num_str = ' '.join([f"[{i+1}]" for i in range(len(results))])
-    print(f"{bcolors.HEADER}SELECT A SOURCE: {num_str} dafault: quit{bcolors.ENDC}\n")
+    print(f"{bcolors.HEADER}SELECT A SOURCE: {num_str} default: quit{bcolors.ENDC}\n")
 
 def run_with_catch(args=None):
     try:
