@@ -54,7 +54,7 @@ def download_file(url, filename):
                 done = int(50 * dl / total_length)
                 sys.stdout.write("\r[%s%s]" % ('=' * done, ' ' * (50-done)) )    
                 sys.stdout.flush()
-            sys.stdout()
+            print()
 
 def get_download_url(doc_data):
     url = "http://111.90.145.72/get"+doc_data["Mirror_2"][20:]+"&mirr=1"
